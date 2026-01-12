@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Sederhana</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2></h2>
+
+            <div class="calc-wrapper">
+
+                <div class="kalkulator">
+
+                <div class="screen">
+                    <input type="text" id="display" readonly>
+                    <h3 id="preview">0</h3>
+                    </div>          
+                    <div class="buttons">
+                    
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="deleteChar()">DEL</button>
+                    <button onclick="appendPercent()">%</button>
+                    <button onclick="appendChar('×')">×</button>
+
+                    <button onclick="appendChar('7')">7</button>
+                    <button onclick="appendChar('8')">8</button>
+                    <button onclick="appendChar('9')">9</button>
+                    <button onclick="appendChar('÷')">÷</button>
+                    
+                    <button onclick="appendChar('4')">4</button>
+                    <button onclick="appendChar('5')">5</button>
+                    <button onclick="appendChar('6')">6</button>
+                    <button onclick="appendChar('-')">-</button>
+
+                    <button onclick="appendChar('1')">1</button>
+                    <button onclick="appendChar('2')">2</button>
+                    <button onclick="appendChar('3')">3</button>
+                    <button onclick="appendChar('+')">+</button>
+
+                    <button onclick="appendChar('(')">(</button>
+                    <button onclick="appendChar('0')">0</button>
+                    <button onclick="appendChar('.')">.</button>
+                    <button class="equal" onclick="calculate()">=</button>
+
+                    <button onclick="appendChar(')')">)</button>
+                    <button class="func" onclick="appendFunc('sin')">sin</button>
+                    <button class="func" onclick="appendFunc('cos')">cos</button>
+                    <button class="func" onclick="appendFunc('tan')">tan</button>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="kalkulator">
+        <input type="text" id="display" readonly>
+
+        <div class="history">
+        <div class="history-header">
+            <span>Riwayat</span>
+            <button onclick="clearHistory()">✕</button>
+        </div>
+        <ul id="history-list"></ul>
+    </div>
+
+
+        <div class="buttons">
+        </div>
+    </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
+    </html>
